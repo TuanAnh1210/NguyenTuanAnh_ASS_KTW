@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {}
+
+.main {
+    position: relative;
+    height: 1200px;
+}
+
+body {
+    background-color: black;
+}
+
+.anidelay {
+    transition: all linear .2s;
+
+}
+
+/* btn-login */
+.btn-login {}
+
+/* nav - mobile */
+.nav__mobile {
+    transform: translateX(-110%);
+    transition: all linear .3s;
+    box-shadow: 0 1px 2px #333;
+    position: absolute;
+    width: 68%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+}
