@@ -26,6 +26,11 @@ itemsBranch.forEach((element) => {
   };
 });
 
+// body onload
+document.querySelector("body").onload = () => {
+  renderExams(document.querySelector(".branch.active"));
+};
+
 // render exams
 const test__present = document.querySelector(".test__present");
 const test__future = document.querySelector(".test__future");
