@@ -269,9 +269,10 @@ function renderExams(examItem) {
     </p>
 
     <button
-      class="w-full border border-[#F26F21] text-[#F26F21] lg:test-[18px] text-[16px] py-2 rounded hover:bg-[#F26F21] hover:text-white anidelay"
+    disabled
+      class="w-full border border-[#A1A1AA] bg-[#A1A1AA] text-white lg:test-[18px] text-[16px] py-2 rounded   "
     >
-      Đăng ký
+    Hết thời gian
     </button>
   </div>
     `
@@ -357,10 +358,10 @@ function renderExams(examItem) {
     </p>
 
     <button
-      class="w-full border border-[#F26F21] text-[#F26F21] lg:test-[18px] text-[16px] py-2 rounded hover:bg-[#F26F21] hover:text-white anidelay"
-    >
-      Đăng ký
-    </button>
+    class="w-full border border-[#F26F21] text-[#F26F21] lg:test-[18px] text-[16px] py-2 rounded hover:bg-[#F26F21] hover:text-white anidelay"
+  >
+    Đăng ký
+  </button>
   </div>
     `
       )
@@ -507,9 +508,10 @@ function renderExams(examItem) {
     </p>
 
     <button
-      class="w-full border border-[#F26F21] text-[#F26F21] lg:test-[18px] text-[16px] py-2 rounded hover:bg-[#F26F21] hover:text-white anidelay"
+    disabled
+      class="w-full border border-[#A1A1AA] bg-[#A1A1AA] text-white lg:test-[18px] text-[16px] py-2 rounded   "
     >
-      Đăng ký
+    Hết thời gian
     </button>
   </div>
     `
@@ -745,9 +747,10 @@ function renderExams(examItem) {
     </p>
 
     <button
-      class="w-full border border-[#F26F21] text-[#F26F21] lg:test-[18px] text-[16px] py-2 rounded hover:bg-[#F26F21] hover:text-white anidelay"
+    disabled
+      class="w-full border border-[#A1A1AA] bg-[#A1A1AA] text-white lg:test-[18px] text-[16px] py-2 rounded   "
     >
-      Đăng ký
+    Hết thời gian
     </button>
   </div>
     `
@@ -983,9 +986,10 @@ function renderExams(examItem) {
     </p>
 
     <button
-      class="w-full border border-[#F26F21] text-[#F26F21] lg:test-[18px] text-[16px] py-2 rounded hover:bg-[#F26F21] hover:text-white anidelay"
+    disabled
+      class="w-full border border-[#A1A1AA] bg-[#A1A1AA] text-white lg:test-[18px] text-[16px] py-2 rounded   "
     >
-      Đăng ký
+    Hết thời gian
     </button>
   </div>
     `

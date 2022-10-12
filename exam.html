@@ -21,59 +21,69 @@
   </head>
   <body>
     <div class="main">
-      <header
-        class="flex justify-between items-center max-w-[1200px] mx-auto h-[76px] px-5"
+      <div
+        style="box-shadow: 0 1px 6px #666"
+        class="fixed left-0 right-0 bg-white z-10"
       >
-        <img src="./assets/imgs/logo.png" alt="fpt polytechnic" />
-
-        <ul class="hidden md:flex flex-1 justify-end">
-          <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
-            <a class="hover:text-[#f2762d] anidelay" href="./index.html"
-              >TRANG CHỦ</a
-            >
-          </li>
-          <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
-            <a class="hover:text-[#f2762d] anidelay" href="#">CÁC CUỘC THI</a>
-          </li>
-          <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
-            <a class="hover:text-[#f2762d] anidelay" href="#">TEST NĂNG LỰC</a>
-          </li>
-        </ul>
-
-        <ul class="md:hidden nav__mobile p-5">
-          <span
-            class="p-4 flex justify-end text-xl hover:text-[#f2762d] text-[#2C5282] mb-8 close-nav cursor-pointer"
-          >
-            <i class="fa-solid fa-circle-xmark"></i>
-          </span>
-          <li
-            class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
-          >
-            <a href="./index.html">TRANG CHỦ</a>
-          </li>
-          <li
-            class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
-          >
-            <a href="#">CÁC CUỘC THI</a>
-          </li>
-          <li
-            class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
-          >
-            <a href="#">TEST NĂNG LỰC</a>
-          </li>
-        </ul>
-        <button
-          class="border border-solid text-[#2C5282] border-[#2C5282] rounded-md w-[100px] h-8 text-[18px] hover:bg-[#2C5282] hover:text-white anidelay btn-login"
+        <header
+          class="flex justify-between items-center max-w-[1200px] mx-auto h-[76px] px-5"
         >
-          Login
-        </button>
+          <a href="#"
+            ><img src="./assets/imgs/logo.png" alt="fpt polytechnic"
+          /></a>
 
-        <span class="md:hidden menu-icon text-xl cursor-pointer"
-          ><i class="fa-solid fa-bars"></i
-        ></span>
-      </header>
+          <ul class="hidden md:flex flex-1 justify-end">
+            <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
+              <a class="hover:text-[#f2762d] anidelay" href="./index.html"
+                >TRANG CHỦ</a
+              >
+            </li>
+            <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
+              <a class="hover:text-[#f2762d] anidelay" href="#">CÁC CUỘC THI</a>
+            </li>
+            <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
+              <a class="hover:text-[#f2762d] anidelay" href="#"
+                >TEST NĂNG LỰC</a
+              >
+            </li>
+          </ul>
 
-      <div class="banner mb-16">
+          <!-- mobile -->
+          <ul class="md:hidden nav__mobile p-5">
+            <span
+              class="p-4 flex justify-end text-xl hover:text-[#f2762d] text-[#2C5282] mb-8 close-nav"
+            >
+              <i class="fa-solid fa-circle-xmark"></i>
+            </span>
+            <li
+              class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
+            >
+              <a href="#">TRANG CHỦ</a>
+            </li>
+            <li
+              class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
+            >
+              <a href="./exam.html">CÁC CUỘC THI</a>
+            </li>
+            <li
+              class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
+            >
+              <a href="#">TEST NĂNG LỰC</a>
+            </li>
+          </ul>
+          <button
+            class="border border-solid text-[#2C5282] border-[#2C5282] rounded-md w-[100px] h-8 text-[18px] hover:bg-[#2C5282] hover:text-white anidelay btn-login"
+          >
+            Login
+          </button>
+
+          <span class="md:hidden menu-icon text-xl text-black"
+            ><i class="fa-solid fa-bars"></i
+          ></span>
+        </header>
+      </div>
+
+      <div class="banner mb-16 pt-[76px]">
         <div class="banner__img lg:h-[482px] md:h-[320px] h-[150px]">
           <img class="h-full w-full" src="./assets/imgs/banner1.png" alt="" />
         </div>
