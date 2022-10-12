@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anhntph29220</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header
+        class="flex justify-between items-center max-w-[1200px] mx-auto h-[76px] px-5"
+      >
+        <img src="./assets/imgs/logo.png" alt="fpt polytechnic" />
+
+        <ul class="hidden md:flex flex-1 justify-end">
+          <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
+            <a class="hover:text-[#f2762d] anidelay" href="./index.html"
+              >TRANG CHỦ</a
+            >
+          </li>
+          <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
+            <a class="hover:text-[#f2762d] anidelay" href="#">CÁC CUỘC THI</a>
+          </li>
+          <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
+            <a class="hover:text-[#f2762d] anidelay" href="#">TEST NĂNG LỰC</a>
+          </li>
+        </ul>
+
+        <ul class="md:hidden nav__mobile p-5">
+          <span
+            class="p-4 flex justify-end text-xl hover:text-[#f2762d] text-[#2C5282] mb-8 close-nav cursor-pointer"
+          >
+            <i class="fa-solid fa-circle-xmark"></i>
+          </span>
+          <li
+            class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
+          >
+            <a href="./index.html">TRANG CHỦ</a>
+          </li>
+          <li
+            class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
+          >
+            <a href="#">CÁC CUỘC THI</a>
+          </li>
+          <li
+            class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
+          >
+            <a href="#">TEST NĂNG LỰC</a>
+          </li>
+        </ul>
+        <button
+          class="border border-solid text-[#2C5282] border-[#2C5282] rounded-md w-[100px] h-8 text-[18px] hover:bg-[#2C5282] hover:text-white anidelay btn-login"
+        >
+          Login
+        </button>
+
+        <span class="md:hidden menu-icon text-xl cursor-pointer"
+          ><i class="fa-solid fa-bars"></i
+        ></span>
+      </header>
+
+      <div class="banner mb-16">
+        <div class="banner__img lg:h-[482px] md:h-[320px] h-[150px]">
+          <img class="h-full w-full" src="./assets/imgs/banner1.png" alt="" />
+        </div>
+      </div>
+
+      <div class="max-w-[1200px] mx-auto px-5 gap-x-8 grid grid-cols-12">
+        <div class="col-span-3 hidden md:block">
+          <h2 class="font-semibold lg:text-[24px] text-[20px] mb-[26px]">
+            Chuyên ngành
+          </h2>
+          <ul>
+            <li
+              class="branch active p-3 text-[14px] lg:text-[18px] rounded anidelay cursor-pointer mb-3 font-semibold hover:bg-[#f2762d] hover:text-[#fff]"
+            >
+              Thiết kế web
+            </li>
+            <li
+              class="branch p-3 text-[14px] lg:text-[18px] rounded anidelay cursor-pointer mb-3 font-semibold hover:bg-[#f2762d] hover:text-[#fff]"
+            >
+              TKDH
+            </li>
+            <li
+              class="branch p-3 text-[14px] lg:text-[18px] rounded anidelay cursor-pointer mb-3 font-semibold hover:bg-[#f2762d] hover:text-[#fff]"
+            >
+              UDPM
+            </li>
+            <li
+              class="branch p-3 mb-3 rounded anidelay cursor-pointer font-semibold hover:bg-[#f2762d] hover:text-[#fff]"
+            >
+              Marketing
+            </li>
+          </ul>
+        </div>
+        <div class="md:col-span-9 col-span-12">
+          <div class="search flex items-center mb-9">
+            <span class="text-[#0066B2] text-[20px]">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input
+              placeholder="Search..."
+              type="text"
+              class="flex-1 ml-4 px-3 py-1 border border-[#333] outline-none"
+            />
+          </div>
+
+          <!-- start mobile -->
+          <ul class="grid grid-cols-4 text-center mb-8 md:hidden">
+            <li
+              class="branch_mobile active font-semibold active text-[12px] p-1 border border-[#F26F21]"
+            >
+              Thiết kế web
+            </li>
+            <li
+              class="branch_mobile font-semibold text-[12px] p-1 border border-[#F26F21]"
+            >
+              TKDH
+            </li>
+            <li
+              class="branch_mobile font-semibold text-[12px] p-1 border border-[#F26F21]"
+            >
+              UDPM
+            </li>
+            <li
+              class="branch_mobile font-semibold text-[12px] p-1 border border-[#F26F21]"
+            >
+              Marketing
+            </li>
+          </ul>
+          <!-- end mobile -->
+
+          <div class="test">
+            <h3 class="font-semibold text-xl mb-8">Đang diễn ra</h3>
+            <div
+              class="test__present grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8"
+            ></div>
+
+            <h3 class="font-semibold text-xl mb-8 mt-16">Sắp diễn ra</h3>
+            <div
+              class="test__future grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8"
+            ></div>
+
+            <h3 class="font-semibold text-xl mb-8 mt-16">Đã kết thúc</h3>
+            <div
+              class="test__past grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/exam.js"></script>
+  </body>
+</html>

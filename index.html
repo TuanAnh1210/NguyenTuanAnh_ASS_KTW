@@ -20,64 +20,300 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <div class="main">
-      <header
-        class="flex justify-between items-center max-w-[1200px] mx-auto h-[76px] px-5"
+    <div class="main relative">
+      <div
+        style="box-shadow: 0 1px 6px #666"
+        class="fixed left-0 right-0 bg-white z-10"
       >
-        <img src="./assets/imgs/logo.png" alt="fpt polytechnic" />
-
-        <ul class="hidden md:flex flex-1 justify-end">
-          <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
-            <a class="hover:text-[#f2762d] anidelay" href="#">TRANG CHỦ</a>
-          </li>
-          <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
-            <a class="hover:text-[#f2762d] anidelay" href="#">CÁC CUỘC THI</a>
-          </li>
-          <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
-            <a class="hover:text-[#f2762d] anidelay" href="#">TEST NĂNG LỰC</a>
-          </li>
-        </ul>
-
-        <ul class="md:hidden nav__mobile p-5">
-          <span
-            class="p-4 flex justify-end text-xl hover:text-[#f2762d] text-[#2C5282] mb-8 close-nav"
-          >
-            <i class="fa-solid fa-circle-xmark"></i>
-          </span>
-          <li
-            class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
-          >
-            <a href="#">TRANG CHỦ</a>
-          </li>
-          <li
-            class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
-          >
-            <a href="#">CÁC CUỘC THI</a>
-          </li>
-          <li
-            class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
-          >
-            <a href="#">TEST NĂNG LỰC</a>
-          </li>
-        </ul>
-        <button
-          class="border border-solid text-[#2C5282] border-[#2C5282] rounded-md w-[100px] h-8 text-[18px] hover:bg-[#2C5282] hover:text-white anidelay btn-login"
+        <header
+          class="flex justify-between items-center max-w-[1200px] mx-auto h-[76px] px-5"
         >
-          Login
-        </button>
+          <a href="#"
+            ><img src="./assets/imgs/logo.png" alt="fpt polytechnic"
+          /></a>
 
-        <span class="md:hidden menu-icon text-xl"
-          ><i class="fa-solid fa-bars"></i
-        ></span>
-      </header>
+          <ul class="hidden md:flex flex-1 justify-end">
+            <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
+              <a class="hover:text-[#f2762d] anidelay" href="#">TRANG CHỦ</a>
+            </li>
+            <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
+              <a class="hover:text-[#f2762d] anidelay" href="./exam.html"
+                >CÁC CUỘC THI</a
+              >
+            </li>
+            <li class="pr-6 text-[#2C5282] font-bold lg:text-[18px]">
+              <a class="hover:text-[#f2762d] anidelay" href="#"
+                >TEST NĂNG LỰC</a
+              >
+            </li>
+          </ul>
 
-      <div class="banner">
-        <div class="banner__img lg:h-[550px] md:h-[320px] h-[150px]">
+          <!-- mobile -->
+          <ul class="md:hidden nav__mobile p-5">
+            <span
+              class="p-4 flex justify-end text-xl hover:text-[#f2762d] text-[#2C5282] mb-8 close-nav"
+            >
+              <i class="fa-solid fa-circle-xmark"></i>
+            </span>
+            <li
+              class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
+            >
+              <a href="#">TRANG CHỦ</a>
+            </li>
+            <li
+              class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
+            >
+              <a href="./exam.html">CÁC CUỘC THI</a>
+            </li>
+            <li
+              class="hover:text-[#f2762d] anidelay text-[#2C5282] font-bold p-2 border-b border-[#2C5282]"
+            >
+              <a href="#">TEST NĂNG LỰC</a>
+            </li>
+          </ul>
+          <button
+            class="border border-solid text-[#2C5282] border-[#2C5282] rounded-md w-[100px] h-8 text-[18px] hover:bg-[#2C5282] hover:text-white anidelay btn-login"
+          >
+            Login
+          </button>
+
+          <span class="md:hidden menu-icon text-xl text-black"
+            ><i class="fa-solid fa-bars"></i
+          ></span>
+        </header>
+      </div>
+
+      <div class="banner mb-16 pt-[76px]">
+        <div class="banner__img lg:h-[482px] md:h-[320px] h-[150px]">
           <img class="h-full w-full" src="./assets/imgs/banner1.png" alt="" />
+        </div>
+      </div>
+
+      <div
+        class="content max-w-[1200px] mb-16 px-5 mx-auto grid items-center md:grid-cols-2 gap-8"
+      >
+        <div class="title__decs">
+          <h3 class="font-semibold text-[#F26F21] lg:text-2xl text-[22px] mb-4">
+            Ai có thể tham gia cuộc thi?
+          </h3>
+          <p
+            class="text-[12px] lg:text-[16px] text-justify lg:leading-[26px] leading-[24px]"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+        </div>
+        <div class="image__decs">
+          <img class="w-full" src="./assets/imgs/title_img.png" alt="" />
+        </div>
+      </div>
+
+      <div class="benefit mb-16 max-w-[1200px] px-5 mx-auto">
+        <h2 class="font-semibold mb-8 text-[#1F2A37] lg:text-[24px]">
+          Lợi ích khi tham gia
+        </h2>
+        <div
+          class="benefit__img grid md:grid-cols-3 lg:gap-x-20 md:gap-x-14 gap-y-4"
+        >
+          <div class="max-h-[260px] overflow-hidden">
+            <img
+              class="w-full h-full img__exam"
+              src="./assets/imgs/image 408.png"
+              alt=""
+            />
+          </div>
+          <div class="max-h-[260px] overflow-hidden">
+            <img
+              class="w-full h-full img__exam"
+              src="./assets/imgs/image 409.png"
+              alt=""
+            />
+          </div>
+          <div class="max-h-[260px] overflow-hidden">
+            <img
+              class="w-full h-full img__exam"
+              src="./assets/imgs/image 410.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="exam max-w-[1200px] px-5 mx-auto mb-16 min-h-[1056px]">
+        <div class="exam__header mb-8 md:flex justify-between">
+          <h3 class="lg:text-[24px] text-[22px] font-semibold mb-6 md:mb-0">
+            Các cuộc thi
+          </h3>
+          <div class="flex items-center">
+            <span class="mr-3 text-xl text-[#0066B2]"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <input
+              class="search-ipt border border-[#333] px-3 py-1 outline-0 flex-1 md:flex-none"
+              type="text"
+              placeholder="Search..."
+            />
+          </div>
+        </div>
+
+        <div
+          class="exam__list grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12"
+        ></div>
+      </div>
+
+      <div class="ranks max-w-[1200px] px-5 mx-auto">
+        <h2 class="font-semibold text-2xl mb-6">Bảng xếp hạng trong tháng</h2>
+
+        <h3
+          class="career inline-block text-xl text-[#71717A] font-semibold mb-9"
+        >
+          Thiết kế web
+        </h3>
+
+        <div
+          class="ranks__lists grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12"
+        ></div>
+
+        <h3
+          class="mt-8 career inline-block text-xl text-[#71717A] font-semibold mb-9"
+        >
+          Thiết kế đồ họa
+        </h3>
+
+        <div
+          class="ranks__lists grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12"
+        >
+          <div>
+            <div class="w-[60px] h-[60px] mx-auto mb-3">
+              <img
+                class="w-full h-full rounded-[50%]"
+                src="./assets/imgs/ranks/148bdcb21c43d01d8952.jpg"
+                alt="${item.fullname}"
+              />
+            </div>
+            <h4 class="text-center mb-2">Nguyễn Tuấn Anh</h4>
+            <div class="flex justify-center items-center mb-3">
+              <img src="./assets/imgs/Vector.png" alt="" />
+              <p class="md:text-[14px] text-[12px] text-[#A1A1AA] ml-2">
+                Poin: <span>160</span>
+              </p>
+            </div>
+            <div class="skills flex flex-wrap justify-center">
+              <p
+                class="md:text-[14px] text-[12px] bg-[#1D98BF] rounded px-3 py-[2px] mr-3 mb-2 text-white"
+              >
+                Photoshop
+              </p>
+              <p
+                class="md:text-[14px] text-[12px] bg-[#1D98BF] rounded px-3 py-[2px] mr-3 mb-2 text-white"
+              >
+                Illustrator
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="w-[60px] h-[60px] mx-auto mb-3">
+              <img
+                class="w-full h-full rounded-[50%]"
+                src="./assets/imgs/ranks/148bdcb21c43d01d8952.jpg"
+                alt="${item.fullname}"
+              />
+            </div>
+            <h4 class="text-center mb-2">Nguyễn Tuấn Anh</h4>
+            <div class="flex justify-center items-center mb-3">
+              <img src="./assets/imgs/Vector.png" alt="" />
+              <p class="md:text-[14px] text-[12px] text-[#A1A1AA] ml-2">
+                Poin: <span>160</span>
+              </p>
+            </div>
+            <div class="skills flex flex-wrap justify-center">
+              <p
+                class="md:text-[14px] text-[12px] bg-[#1D98BF] rounded px-3 py-[2px] mr-3 mb-2 text-white"
+              >
+                Photoshop
+              </p>
+              <p
+                class="md:text-[14px] text-[12px] bg-[#1D98BF] rounded px-3 py-[2px] mr-3 mb-2 text-white"
+              >
+                Illustrator
+              </p>
+              <p
+                class="md:text-[14px] text-[12px] bg-[#1D98BF] rounded px-3 py-[2px] mr-3 mb-2 text-white"
+              >
+                Maya
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="w-[60px] h-[60px] mx-auto mb-3">
+              <img
+                class="w-full h-full rounded-[50%]"
+                src="./assets/imgs/ranks/148bdcb21c43d01d8952.jpg"
+                alt="${item.fullname}"
+              />
+            </div>
+            <h4 class="text-center mb-2">Nguyễn Tuấn Anh</h4>
+            <div class="flex justify-center items-center mb-3">
+              <img src="./assets/imgs/Vector.png" alt="" />
+              <p class="md:text-[14px] text-[12px] text-[#A1A1AA] ml-2">
+                Poin: <span>160</span>
+              </p>
+            </div>
+            <div class="skills flex flex-wrap justify-center">
+              <p
+                class="md:text-[14px] text-[12px] bg-[#1D98BF] rounded px-3 py-[2px] mr-3 mb-2 text-white"
+              >
+                Photoshop
+              </p>
+              <p
+                class="md:text-[14px] text-[12px] bg-[#1D98BF] rounded px-3 py-[2px] mr-3 mb-2 text-white"
+              >
+                Illustrator
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="w-[60px] h-[60px] mx-auto mb-3">
+              <img
+                class="w-full h-full rounded-[50%]"
+                src="./assets/imgs/ranks/148bdcb21c43d01d8952.jpg"
+                alt="${item.fullname}"
+              />
+            </div>
+            <h4 class="text-center mb-2">Nguyễn Tuấn Anh</h4>
+            <div class="flex justify-center items-center mb-3">
+              <img src="./assets/imgs/Vector.png" alt="" />
+              <p class="md:text-[14px] text-[12px] text-[#A1A1AA] ml-2">
+                Poin: <span>160</span>
+              </p>
+            </div>
+            <div class="skills flex flex-wrap justify-center">
+              <p
+                class="md:text-[14px] text-[12px] bg-[#1D98BF] rounded px-3 py-[2px] mr-3 mb-2 text-white"
+              >
+                Photoshop
+              </p>
+              <p
+                class="md:text-[14px] text-[12px] bg-[#1D98BF] rounded px-3 py-[2px] mr-3 mb-2 text-white"
+              >
+                Illustrator
+              </p>
+              <p
+                class="md:text-[14px] text-[12px] bg-[#1D98BF] rounded px-3 py-[2px] mr-3 mb-2 text-white"
+              >
+                Photoshop
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
+    <script src="./assets/js/data.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     scroll-behavior: smooth;
 }
 
@@ -13,11 +13,16 @@ html {
 
 .main {
     position: relative;
-    height: 1200px;
+}
+
+.active {
+    background-color: #F26F21;
+    color: #fff;
 }
 
 body {
-    background-color: black;
+    /* background-color: black;
+    color: #fff; */
 }
 
 .anidelay {
@@ -38,5 +43,50 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
+    height: 100vh;
     background-color: #fff;
+}
+
+/*  img__exam */
+
+.img__exam:hover {
+    transform: scale(112%, 112%);
+    transition: all linear .3s;
+    opacity: .8;
+    cursor: pointer;
+}
+
+
+.career {
+    position: relative;
+}
+
+.career::after {
+    position: absolute;
+    content: "";
+    top: calc(100% + 4px);
+    left: 0;
+    width: 68%;
+    height: 3px;
+    background-color: orangered;
+}
+
+
+
+
+
+/* ani */
+
+.ani {
+    animation: showIn ease-in .8s;
+}
+
+@keyframes showIn {
+    from {
+        opacity: .6;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
