@@ -16,10 +16,20 @@ closeNav.onclick = () => {
 
 // handle active exams
 const itemsBranch = document.querySelectorAll(".branch");
+const itemsBranch_mb = document.querySelectorAll(".branch_mobile");
 
 itemsBranch.forEach((element) => {
   element.onclick = function () {
     const temp = document.querySelector(".branch.active");
+    temp.classList.remove("active");
+    this.classList.add("active");
+    renderExams(this);
+  };
+});
+
+itemsBranch_mb.forEach((element) => {
+  element.onclick = function () {
+    const temp = document.querySelector(".branch_mobile.active");
     temp.classList.remove("active");
     this.classList.add("active");
     renderExams(this);
@@ -35,7 +45,10 @@ document.querySelector("body").onload = () => {
 const test__present = document.querySelector(".test__present");
 const test__future = document.querySelector(".test__future");
 const test__past = document.querySelector(".test__past");
-
+let countSecond = 16;
+let countMinutes = 48;
+let countHours = 14;
+let countDays = 18;
 function renderExams(examItem) {
   // const temp = document.querySelector(".branch.active");
   const temp = examItem;
@@ -77,7 +90,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >12</span
+            >11</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -86,8 +99,8 @@ function renderExams(examItem) {
 
         <p class="flex flex-col items-center">
           <span
-            class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold hours"
+            >${countHours}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Hours</span>
         </p>
@@ -96,7 +109,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countMinutes}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Minutes</span>
         </p>
@@ -105,7 +118,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countSecond}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Seconds</span>
         </p>
@@ -152,7 +165,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >12</span
+            >${countDays}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -162,7 +175,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countHours}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Hours</span>
         </p>
@@ -171,7 +184,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countMinutes}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Minutes</span>
         </p>
@@ -180,7 +193,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countSecond}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Seconds</span>
         </p>
@@ -227,7 +240,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -237,7 +250,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Hours</span>
         </p>
@@ -246,7 +259,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Minutes</span>
         </p>
@@ -255,7 +268,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Seconds</span>
         </p>
@@ -316,7 +329,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >12</span
+            >20</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -326,7 +339,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countHours}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Hours</span>
         </p>
@@ -335,7 +348,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countMinutes}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Minutes</span>
         </p>
@@ -344,7 +357,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countSecond}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Seconds</span>
         </p>
@@ -391,7 +404,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >12</span
+            >32</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -401,7 +414,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >22</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Hours</span>
         </p>
@@ -410,7 +423,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countMinutes}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Minutes</span>
         </p>
@@ -419,7 +432,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countSecond}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Seconds</span>
         </p>
@@ -466,7 +479,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -476,7 +489,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Hours</span>
         </p>
@@ -485,7 +498,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Minutes</span>
         </p>
@@ -494,7 +507,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Seconds</span>
         </p>
@@ -555,7 +568,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >12</span
+            >7</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -565,7 +578,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >20</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Hours</span>
         </p>
@@ -574,7 +587,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countMinutes}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Minutes</span>
         </p>
@@ -583,7 +596,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countSecond}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Seconds</span>
         </p>
@@ -630,7 +643,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >12</span
+            >6</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -640,7 +653,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countHours}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Hours</span>
         </p>
@@ -649,7 +662,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countMinutes}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Minutes</span>
         </p>
@@ -658,7 +671,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countSecond}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Seconds</span>
         </p>
@@ -705,7 +718,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -715,7 +728,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Hours</span>
         </p>
@@ -724,7 +737,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Minutes</span>
         </p>
@@ -733,7 +746,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Seconds</span>
         </p>
@@ -794,7 +807,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >12</span
+            >4</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -804,7 +817,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >15</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Hours</span>
         </p>
@@ -813,7 +826,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countMinutes}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Minutes</span>
         </p>
@@ -822,7 +835,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countSecond}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Seconds</span>
         </p>
@@ -869,7 +882,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >12</span
+            >${countDays}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -879,7 +892,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countHours}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Hours</span>
         </p>
@@ -888,7 +901,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countMinutes}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Minutes</span>
         </p>
@@ -897,7 +910,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >${countSecond}</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Seconds</span>
         </p>
@@ -944,7 +957,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -954,7 +967,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Hours</span>
         </p>
@@ -963,7 +976,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Minutes</span>
         </p>
@@ -972,7 +985,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold"
-            >12</span
+            >00</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Seconds</span>
         </p>
@@ -997,3 +1010,20 @@ function renderExams(examItem) {
       .join("");
   }
 }
+
+setInterval(() => {
+  if (countSecond <= 0) {
+    countSecond = 60;
+    if (countMinutes <= 0) {
+      countMinutes = 61;
+      if (countHours <= 0) {
+        countHours = 61;
+        countDays--;
+      }
+      countHours--;
+    }
+    countMinutes--;
+  }
+  countSecond--;
+  renderExams(document.querySelector(".branch.active"));
+}, 1000);

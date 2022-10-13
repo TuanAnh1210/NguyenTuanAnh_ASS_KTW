@@ -367,13 +367,4 @@ let examlist = [
     branch: "Marketing",
     users: 26,
   },
-  {
-    id: 27,
-    image: "./assets/imgs/exams/image 108.png",
-    title: "Marketing in the word",
-    timestart: "2022/12/20 12:00:00",
-    state: "present",
-    branch: "Marketing",
-    users: 26,
-  },
 ];
