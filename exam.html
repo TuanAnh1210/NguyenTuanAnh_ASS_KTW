@@ -11,6 +11,8 @@
       href="https://www.ta-agri.co.uk/wp-content/uploads/2018/12/favicon.png"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/lib/aos/aos.css" />
+
     <link rel="stylesheet" href="./assets/lib/owl/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./assets/lib/owl/owl.carousel.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +28,13 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <div class="main">
+    <div class="main overflow-hidden">
+      <div class="goToTop">
+        <span>Top</span>
+        <span>
+          <i class="fa-solid fa-angle-double-up"></i>
+        </span>
+      </div>
       <div
         style="box-shadow: 0 1px 6px #666"
         class="fixed left-0 right-0 bg-white z-10"
@@ -89,7 +97,11 @@
         </header>
       </div>
 
-      <div class="banner mb-16 pt-[76px]">
+      <div
+        data-aos="zoom-out"
+        data-aos-duration="2000"
+        class="banner mb-16 pt-[76px]"
+      >
         <div
           class="banner__img lg:h-[482px] md:h-[320px] h-[150px] owl-carousel owl-theme"
         >
@@ -99,8 +111,14 @@
         </div>
       </div>
 
-      <div class="max-w-[1200px] mx-auto px-5 gap-x-8 grid grid-cols-12">
-        <div class="col-span-3 hidden md:block">
+      <div
+        class="sm:pt-[102px] md:pt-0 pt-8 max-w-[1200px] mx-auto px-5 gap-x-8 grid grid-cols-12"
+      >
+        <div
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          class="col-span-3 hidden md:block"
+        >
           <h2 class="font-semibold lg:text-[24px] text-[20px] mb-[26px]">
             Chuyên ngành
           </h2>
@@ -127,7 +145,11 @@
             </li>
           </ul>
         </div>
-        <div class="md:col-span-9 col-span-12">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          class="md:col-span-9 col-span-12"
+        >
           <div class="search flex items-center mb-9">
             <span class="text-[#0066B2] text-[20px]">
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -298,6 +320,10 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/lib/aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./assets/lib/owl/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function () {

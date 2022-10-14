@@ -20,7 +20,31 @@ html {
     color: #fff;
 }
 
-body {}
+body {
+    overflow-y: overlay;
+
+}
+
+
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 
 .anidelay {
     transition: all linear .2s;
@@ -95,4 +119,40 @@ body {}
 
 footer {
     border-top: 10px solid #f7941d;
+}
+
+/* GOTOTOP */
+.goToTop {
+    position: fixed;
+    right: 2%;
+    top: 80%;
+    background-color: #ff7a18;
+    color: black;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    z-index: 100;
+    transition: all .2s ease;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+    animation: goToTop .6s ease;
+}
+
+.goToTop:hover {
+    transform: translateY(-2px);
+    color: aliceblue;
+}
+
+@keyframes goToTop {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: .8;
+    }
 }

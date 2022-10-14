@@ -11,6 +11,7 @@
       href="https://www.ta-agri.co.uk/wp-content/uploads/2018/12/favicon.png"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/lib/aos/aos.css" />
     <link rel="stylesheet" href="./assets/lib/owl/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./assets/lib/owl/owl.carousel.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +27,13 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <div class="main relative">
+    <div class="main relative overflow-hidden">
+      <div class="goToTop">
+        <span>Top</span>
+        <span>
+          <i class="fa-solid fa-angle-double-up"></i>
+        </span>
+      </div>
       <div
         style="box-shadow: 0 1px 6px #666"
         class="fixed left-0 right-0 bg-white z-10"
@@ -89,9 +96,13 @@
         </header>
       </div>
 
-      <div class="banner mb-16 pt-[76px]">
+      <div
+        data-aos="zoom-out"
+        data-aos-duration="2000"
+        class="banner mb-16 pt-[76px]"
+      >
         <div
-          class="banner__img lg:h-[482px] md:h-[320px] h-[150px] owl-carousel owl-theme"
+          class="banner__img lg:h-[482px] md:h-[320px] sm:h-[280px] h-[128px] owl-carousel owl-theme"
         >
           <img class="h-full w-full" src="./assets/imgs/banner1.png" alt="" />
           <img class="h-full w-full" src="./assets/imgs/banner1.png" alt="" />
@@ -100,9 +111,9 @@
       </div>
 
       <div
-        class="content max-w-[1200px] mb-16 px-5 mx-auto grid items-center md:grid-cols-2 gap-8"
+        class="content max-w-[1200px] mb-16 px-5 mx-auto grid items-center md:grid-cols-2 gap-8 pt-16 md:pt-0"
       >
-        <div class="title__decs">
+        <div data-aos="fade-right" data-aos-duration="2000" class="title__decs">
           <h3 class="font-semibold text-[#F26F21] lg:text-2xl text-[22px] mb-4">
             Ai có thể tham gia cuộc thi?
           </h3>
@@ -117,7 +128,11 @@
             remaining essentially unchanged.
           </p>
         </div>
-        <div class="image__decs overflow-hidden">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          class="image__decs overflow-hidden"
+        >
           <img
             class="w-full img__exam"
             src="./assets/imgs/title_img.png"
@@ -126,7 +141,11 @@
         </div>
       </div>
 
-      <div class="benefit mb-16 max-w-[1200px] px-5 mx-auto">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class="benefit mb-16 max-w-[1200px] px-5 mx-auto"
+      >
         <h2 class="font-semibold mb-8 text-[#1F2A37] lg:text-[24px]">
           Lợi ích khi tham gia
         </h2>
@@ -157,7 +176,11 @@
         </div>
       </div>
 
-      <div class="exam max-w-[1200px] px-5 mx-auto mb-16 min-h-[1056px]">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class="exam max-w-[1200px] px-5 mx-auto mb-16 min-h-[1056px]"
+      >
         <div class="exam__header mb-8 md:flex justify-between">
           <h3 class="lg:text-[24px] text-[22px] font-semibold mb-6 md:mb-0">
             Các cuộc thi
@@ -189,6 +212,8 @@
         </h3>
 
         <div
+          data-aos="flip-left"
+          data-aos-duration="2000"
           class="ranks__lists grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12"
         ></div>
 
@@ -199,6 +224,8 @@
         </h3>
 
         <div
+          data-aos="flip-left"
+          data-aos-duration="2000"
           class="ranks__lists grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-12"
         >
           <div>
@@ -441,6 +468,10 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/lib/aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./assets/lib/owl/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function () {

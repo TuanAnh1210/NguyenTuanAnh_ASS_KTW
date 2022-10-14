@@ -83,7 +83,7 @@ function renderWeb(ranksWeb) {
   ranks__lists.innerHTML = ranksWeb
     .map(
       (item) => `
-    <div>
+    <div >
             <div class="w-[60px] h-[60px] mx-auto mb-3">
               <img
                 class="w-full h-full rounded-[50%]"
@@ -125,3 +125,21 @@ function renderWeb(ranksWeb) {
     )
     .join("");
 }
+
+const goToTop = document.querySelector(".goToTop");
+
+const handleScrooll = () => {
+  if (window.scrollY >= 680) {
+    goToTop.style.display = "flex";
+  } else {
+    goToTop.style.display = "none";
+  }
+};
+
+goToTop.onclick = () => {
+  window.location.href = "#";
+};
+
+window.addEventListener("scroll", handleScrooll);
+
+// end GotoTop

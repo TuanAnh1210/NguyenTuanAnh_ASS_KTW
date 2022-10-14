@@ -329,7 +329,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >20</span
+            >2</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -643,7 +643,7 @@ function renderExams(examItem) {
         <p class="flex flex-col items-center">
           <span
             class="text-[#1D98BF] lg:text-[18px] text-[14px] font-semibold days"
-            >6</span
+            >36</span
           >
           <span class="text-[12px] text-[#A1A1AA]">Days</span>
         </p>
@@ -1027,3 +1027,21 @@ setInterval(() => {
   countSecond--;
   renderExams(document.querySelector(".branch.active"));
 }, 1000);
+
+const goToTop = document.querySelector(".goToTop");
+
+const handleScrooll = () => {
+  if (window.scrollY >= 680) {
+    goToTop.style.display = "flex";
+  } else {
+    goToTop.style.display = "none";
+  }
+};
+
+goToTop.onclick = () => {
+  window.location.href = "#";
+};
+
+window.addEventListener("scroll", handleScrooll);
+
+// end GotoTop
