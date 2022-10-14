@@ -20,10 +20,7 @@ html {
     color: #fff;
 }
 
-body {
-    background-color: black;
-    color: #fff;
-}
+body {}
 
 .anidelay {
     transition: all linear .2s;
@@ -89,4 +86,13 @@ body {
     to {
         opacity: 1;
     }
+}
+
+.owl-dots,
+.owl-nav {
+    display: none;
+}
+
+footer {
+    border-top: 10px solid #f7941d;
 }
