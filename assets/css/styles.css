@@ -156,3 +156,8 @@ footer {
         opacity: .8;
     }
 }
+
+.hv_exam:hover h4 {
+    cursor: pointer;
+    color: #F26F21;
+}

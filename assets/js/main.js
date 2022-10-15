@@ -28,7 +28,8 @@ function render(listData) {
   exam__list.innerHTML = listData
     .map(
       (item) => `
-  <div>
+  <div data-aos="flip-left"
+  data-aos-duration="2000" class="hv_exam">
   <div class="max-h-[242px] mb-6 overflow-hidden rounded-2xl">
     <img
       class="w-full img__exam"
@@ -83,7 +84,7 @@ function renderWeb(ranksWeb) {
   ranks__lists.innerHTML = ranksWeb
     .map(
       (item) => `
-    <div >
+    <div>
             <div class="w-[60px] h-[60px] mx-auto mb-3">
               <img
                 class="w-full h-full rounded-[50%]"
