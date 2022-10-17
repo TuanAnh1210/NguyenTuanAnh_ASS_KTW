@@ -1,0 +1,24 @@
+{
+  "name": "ass_ktw_anhntph29220",
+  "version": "1.0.0",
+  "description": "link: https://tuananh1210.github.io/NguyenTuanAnh_ASS_KTW/",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "start": "json-server --watch db.json",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TuanAnh1210/NguyenTuanAnh_ASS_KTW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TuanAnh1210/NguyenTuanAnh_ASS_KTW/issues"
+  },
+  "homepage": "https://github.com/TuanAnh1210/NguyenTuanAnh_ASS_KTW#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

@@ -32,6 +32,7 @@ itemsBranch_mb.forEach((element) => {
     const temp = document.querySelector(".branch_mobile.active");
     temp.classList.remove("active");
     this.classList.add("active");
+
     renderExams(this);
   };
 });

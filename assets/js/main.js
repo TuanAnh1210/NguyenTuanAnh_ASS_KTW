@@ -16,10 +16,19 @@ closeNav.onclick = () => {
 
 // body onload call render func
 
-let listData = data.slice(0, 6);
 document.querySelector("body").onload = () => {
-  render(listData);
-  renderWeb(ranksWeb);
+  fetch("http://localhost:3000/data")
+    .then((res) => res.json())
+    .then((result) => {
+      let listData = result.slice(0, 6);
+      render(listData);
+    });
+
+  fetch("http://localhost:3000/ranksWeb")
+    .then((res) => res.json())
+    .then((result) => {
+      renderWeb(result);
+    });
 };
 
 // render ui
@@ -64,18 +73,24 @@ function render(listData) {
 // search
 const searchIpt = document.querySelector(".search-ipt");
 searchIpt.onkeyup = function (e) {
-  const arrSearch = [];
-  const textIpt = e.target.value;
+  fetch("http://localhost:3000/data")
+    .then((res) => res.json())
+    .then((result) => {
+      let listData = result.slice(0, 6);
+      const arrSearch = [];
+      const textIpt = e.target.value;
 
-  for (let i = 0; i < listData.length; i++) {
-    const testText = listData[i].title.toLowerCase();
+      for (let i = 0; i < listData.length; i++) {
+        const testText = listData[i].title.toLowerCase();
 
-    if (testText.indexOf(textIpt.toLowerCase()) > -1) {
-      arrSearch.push(listData[i]);
-    }
-  }
+        if (testText.indexOf(textIpt.toLowerCase()) > -1) {
+          arrSearch.push(listData[i]);
+        }
+      }
+      render(arrSearch);
+    });
 
-  render(arrSearch);
+  // render(arrSearch);
 };
 
 // render rank web
